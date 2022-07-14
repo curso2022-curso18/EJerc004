@@ -8,18 +8,23 @@ public class PersonaController {
 	public long create(Persona persona) {
 		return personaService.create(persona);
 	}
+	
 	public Persona read(long Id) {
 		return personaService.read(Id);
 	}
+	
 	public List<Persona> readAll(){
 		return personaService.readAll();
 	}
+	
 	public void update(Persona persona) {
 		personaService.update(persona);
 	}
+	
 	public void delete(long Id) {
 		personaService.delete(Id);
 	}
+	
 	public PersonaService getPersonaService() {
 		return personaService;
 	}
